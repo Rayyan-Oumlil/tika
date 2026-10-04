@@ -319,6 +319,8 @@ least three +1 Tika PMC votes are cast.
 
             <!-- subprojects already checked, added for RAT 0.17, see also RAT-97 -->
             <inputExclude>tika-*/**</inputExclude>
+            <!-- IFT3913 tâche 2 : notes, logs et rapports (pas du code source Tika) -->
+            <inputExclude>docs-tache2/**</inputExclude>
           </inputExcludes>
         </configuration>
       </plugin>
