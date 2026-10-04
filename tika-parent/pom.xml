@@ -1262,6 +1262,12 @@
           <groupId>org.apache.rat</groupId>
           <artifactId>apache-rat-plugin</artifactId>
           <version>${rat.version}</version> <!-- keep this when version newer than apache parent -->
+          <configuration>
+            <inputExcludes combine.children="append">
+              <!-- IFT3913 tâche 2 : sortie brute de ChatUniTest (pas d'en-tête de licence) -->
+              <inputExclude>chatunitest-tests/**</inputExclude>
+            </inputExcludes>
+          </configuration>
         </plugin>
       </plugins>
     </pluginManagement>
